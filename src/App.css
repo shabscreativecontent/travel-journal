@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+/* *{
+  border: 1px solid blue;
+} */
+
+body {
+  font-family: "Inter", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: #f55a5a;
+  height: 70px;
+  gap: 1%;
+  margin-bottom: 70px;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar > img {
+  height: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar > h3{
+  margin: 0;
+  font-weight: 400;
+  color: #fff;
+}
+
+.cardW{
+  max-width: 700px;
+  width: 80%;
+  min-width: 300px;
+  margin: auto;
+}
+
+.card, .icon-card{
+  display: flex;
+  flex-direction: row;
+}
+
+.card{
+  gap: 2%;
+  margin-block: 15px;
+}
+
+.card > img {
+  height: 280px;
+  width: 220px;
+  border-radius: 20px;
+}
+
+.icon-card{
+  align-items: center;
+  margin-top: 15px;
+}
+
+.icon-card > h3, .icon-card + h1, span + p {
+  margin: 0;
+}
+
+.icon-card > i {
+  color: #f55a5a;
+  margin-right: 4px;
+}
+
+.icon-card > h3 {
+  font-weight: 200;
+  font-size: 18px;
+  margin-right: 17px;
+}
+
+.icon-card > a {
+  font-weight: 400;
+  font-size: 15px;
+  color: rgb(112, 112, 112);
+  text-decoration: underline;
+}
+
+.icon-card + h1 {
+  margin: 5px 0px 20px 0px;
+  font-size: 31px;
+}
+
+h1 + span {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+span + p {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 140%;
+}
+
+hr {
+  opacity: 30%;
 }
